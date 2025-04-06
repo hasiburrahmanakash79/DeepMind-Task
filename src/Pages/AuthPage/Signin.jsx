@@ -14,7 +14,7 @@ const Signin = () => {
         setError('');
         try {
             await logInUser(email, password);
-            navigate('/'); // Redirect to home page or any other page after successful login
+            navigate('/');
             alert('Login successful');
         } catch (err) {
             setError(err.message);
