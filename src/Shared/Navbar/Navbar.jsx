@@ -11,6 +11,7 @@ const Navbar = () => {
   const handleLogout = () => {
     console.log("Logout");
     logOut();
+    alert("Logout");
   }
 
   return (
@@ -20,6 +21,7 @@ const Navbar = () => {
         <div>
           <Link to="/about" className="mr-4">About</Link>
           <Link to="/contact" className="mr-4">Contact</Link>
+          <Link to="/products" className="mr-4">Products</Link>
           {user ? (
             <>
               <Link to="/dashboard" className="mr-4">Dashboard</Link>

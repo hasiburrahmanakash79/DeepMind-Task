@@ -8,6 +8,7 @@ import UserDashboard from "../Pages/Dashboards/UserDashboard";
 import PrivateRoute from "./PrivateRoute";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
+import Products from "../Pages/Products/Products";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         {
             path: "/about",
             element: <About/>,
+        },
+        {
+            path: "/products",
+            element: <Products/>,
         },
         {
             path: "/contact",

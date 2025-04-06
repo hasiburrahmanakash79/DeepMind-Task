@@ -3,7 +3,7 @@ import Navbar from '../Shared/Navbar/Navbar';
 
 const Main = () => {
     return (
-        <div className=' bg-gray-100'>
+        <div className=''>
             <Navbar/>
             <div className='container mx-auto'>
                 <Outlet/>

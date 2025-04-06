@@ -15,6 +15,7 @@ const Signin = () => {
         try {
             await logInUser(email, password);
             navigate('/'); // Redirect to home page or any other page after successful login
+            alert('Login successful');
         } catch (err) {
             setError(err.message);
         }
@@ -56,7 +57,7 @@ const Signin = () => {
                     >
                         Sign In
                     </button>
-                    <p>Don't have an account? <Link to="/signUp">Sign Up</Link></p>
+                    <p>Do not have an account? <Link to="/signUp">Sign Up</Link></p>
                 </form>
             </div>
         </div>

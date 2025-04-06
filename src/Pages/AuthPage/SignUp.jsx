@@ -18,6 +18,7 @@ const handleSubmit = async (event) => {
     try {
         await signUpUser(email.value, password.value);
         navigate("/dashboard"); 
+        alert("Sign up successful");
         console.log(signUpUser);
     } catch (error) {
         console.error("Error signing up:", error);
